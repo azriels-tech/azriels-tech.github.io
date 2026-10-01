@@ -1,0 +1,422 @@
+/**
+ * Data Project Portofolio Azriel
+ * 
+ * Untuk menambah atau mengubah project di halaman homepage, 
+ * cukup edit array `projectsData` di bawah ini. 
+ * Kategori yang tersedia: 'Web', 'Python', 'Flutter', 'Android', 'Scripting', 'Contribution'
+ */
+
+window.projectsData = [
+  /*{
+    id: 'web-1',
+    title: 'Azriel Nexus Dashboard',
+    category: 'Web',
+    description: 'Platform dashboard interaktif modern dengan visualisasi data real-time, analytics, dan kustomisasi tema.',
+    tags: ['HTML5', 'CSS3', 'JavaScript', 'Chart.js', 'Tailwind'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`,
+    stars: 128,
+    forks: 34,
+    github: 'https://github.com/azriel/nexus-dashboard',
+    demo: 'https://azriel.dev/nexus',
+    featured: true,
+    date: '2026-08'
+  },
+  {
+    id: 'python-1',
+    title: 'PyData Insights Engine',
+    category: 'Python',
+    description: 'Automated data pipeline dan machine learning suite untuk analisis tren pasar dan ekstraksi insight otomatis.',
+    tags: ['Python', 'Pandas', 'Scikit-Learn', 'FastAPI', 'PyTest'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>`,
+    stars: 95,
+    forks: 18,
+    github: 'https://github.com/azriel/pydata-insights',
+    demo: 'https://github.com/azriel/pydata-insights#demo',
+    featured: true,
+    date: '2026-07'
+  },
+  {
+    id: 'flutter-1',
+    title: 'PulseFit Mobile App',
+    category: 'Flutter',
+    description: 'Aplikasi pelacak kebugaran & kesehatan cross-platform dengan grafik aktivitas harian dan sinkronisasi cloud.',
+    tags: ['Flutter', 'Dart', 'Firebase', 'Provider', 'Bloc'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>`,
+    stars: 210,
+    forks: 42,
+    github: 'https://github.com/azriel/pulsefit-flutter',
+    demo: 'https://play.google.com/store/apps',
+    featured: true,
+    date: '2026-06'
+  },
+  {
+    id: 'android-1',
+    title: 'Aura Sound Player',
+    category: 'Android',
+    description: 'Pemutar musik lokal Android native yang cepat dengan equalizer 10-band, dukungan lossy & lossless audio.',
+    tags: ['Kotlin', 'Jetpack Compose', 'ExoPlayer', 'Coroutines', 'Room'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>`,
+    stars: 87,
+    forks: 15,
+    github: 'https://github.com/azriel/aura-audio-android',
+    demo: '',
+    featured: false,
+    date: '2026-05'
+  },
+  {
+    id: 'scripting-1',
+    title: 'AutoDev Linux Setup CLI',
+    category: 'Scripting',
+    description: 'Skrip otomasi Bash & Zsh untuk mengonfigurasi lingkungan pengembangan Linux, Zsh, Neovim, dan Dotfiles.',
+    tags: ['Bash', 'Shell', 'Linux', 'Zsh', 'Automation'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>`,
+    stars: 310,
+    forks: 89,
+    github: 'https://github.com/azriel/autodev-script',
+    demo: '',
+    featured: true,
+    date: '2026-04'
+  },
+  {
+    id: 'contribution-1',
+    title: 'Awesome-Web Components Library',
+    category: 'Contribution',
+    description: 'Kontribusi modul komponen UI accessibility dan styling modern ke proyek open-source publik global.',
+    tags: ['Open Source', 'JavaScript', 'CSS Modules', 'a11y'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`,
+    stars: 1450,
+    forks: 230,
+    github: 'https://github.com/community/awesome-web-components',
+    demo: 'https://awesome-components.org',
+    featured: true,
+    date: '2026-03'
+  },
+  {
+    id: 'web-2',
+    title: 'Azriel Craft Portfolio Template',
+    category: 'Web',
+    description: 'Template web portofolio statis yang super ringan, fleksibel, dan terintegrasi dengan filter JS dinamis.',
+    tags: ['HTML5', 'CSS3', 'JS ES6'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>`,
+    stars: 64,
+    forks: 12,
+    github: 'https://github.com/azriel/azriel-craft-template',
+    demo: 'https://azriel.dev',
+    featured: false,
+    date: '2026-02'
+  },
+  {
+    id: 'python-2',
+    title: 'Submarine Vision AI',
+    category: 'Python',
+    description: 'Proyek Computer Vision berbasis OpenCV untuk deteksi objek bawah air dan klasifikasi habitat terumbu karang.',
+    tags: ['Python', 'OpenCV', 'PyTorch', 'YOLOv8'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>`,
+    stars: 76,
+    forks: 14,
+    github: 'https://github.com/azriel/submarine-vision-ai',
+    demo: '',
+    featured: false,
+    date: '2026-01'
+  },
+  {
+    id: 'flutter-2',
+    title: 'CryptoTrack Pro',
+    category: 'Flutter',
+    description: 'Dashboard dompet & pemantau pasar kripto realtime dengan notifikasi pergerakan harga.',
+    tags: ['Flutter', 'REST API', 'WebSocket', 'GetX'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`,
+    stars: 112,
+    forks: 29,
+    github: 'https://github.com/azriel/cryptotrack-flutter',
+    demo: '',
+    featured: false,
+    date: '2025-12'
+  },
+  {
+    id: 'scripting-2',
+    title: 'Docker Backup Utility',
+    category: 'Scripting',
+    description: 'Skrip otomatisasi untuk membackup volume Docker container dan mengunggah snapshot terkunci ke cloud storage.',
+    tags: ['Bash', 'Docker', 'Rclone', 'Cron'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>`,
+    stars: 53,
+    forks: 9,
+    github: 'https://github.com/azriel/docker-backup-script',
+    demo: '',
+    featured: false,
+    date: '2025-11'
+  }
+  */
+  {
+    id: 'web-1',
+    title: 'Calculator',
+    category: 'Web',
+    badge: 'Static',
+    description: 'Calculator Project for implementing Javascript eval.',
+    tags: ['HTML5', 'CSS3', 'JavaScript'],
+    icon: `<svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 9H19M15 18V15M9 18H9.01M12 18H12.01M12 15H12.01M9 15H9.01M15 12H15.01M12 12H12.01M9 12H9.01M8.2 21H15.8C16.9201 21 17.4802 21 17.908 20.782C18.2843 20.5903 18.5903 20.2843 18.782 19.908C19 19.4802 19 18.9201 19 17.8V6.2C19 5.0799 19 4.51984 18.782 4.09202C18.5903 3.71569 18.2843 3.40973 17.908 3.21799C17.4802 3 16.9201 3 15.8 3H8.2C7.0799 3 6.51984 3 6.09202 3.21799C5.71569 3.40973 5.40973 3.71569 5.21799 4.09202C5 4.51984 5 5.07989 5 6.2V17.8C5 18.9201 5 19.4802 5.21799 19.908C5.40973 20.2843 5.71569 20.5903 6.09202 20.782C6.51984 21 7.07989 21 8.2 21Z" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+           </svg>`,
+    github: 'https://github.com/azriels-tech/WCalc',
+    demo: 'https://azriels-tech.github.io/WCalc',
+    featured: true,
+    date: '2026-06-21'
+  },
+  {
+    id: 'web-2',
+    title: 'Counter App',
+    category: 'Web',
+    badge: 'Static',
+    description: 'Counter App for implementing value change on Javascript.',
+    tags: ['HTML5', 'CSS3', 'JavaScript'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 9h8M12 5v8M8 16h8"/></svg>`,
+    github: 'https://github.com/azriels-tech/WCount',
+    demo: 'https://azriels-tech.github.io/WCount',
+    featured: true,
+    date: '2026-06-21'
+  },
+  {
+    id: 'web-5',
+    title: 'SPMB',
+    category: 'Web',
+    badge: 'Static',
+    description: 'An app to managing user registration and login form, sadly using ChatGPT and it was a school project.',
+    tags: ['HTML5', 'CSS3', 'JavaScript', 'ReactJS'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3 2.7-5 6-5s6 2 6 5"/><rect x="14" y="12" width="7" height="8" rx="1"/><path d="M16 12v-1a2 2 0 0 1 4 0v1"/></svg>`,
+    github: 'https://github.com/azriels-tech/SPMB',
+    featured: true,
+    date: '2026-06-22'
+  },
+  {
+    id: 'web-4',
+    title: 'Personal Note App',
+    category: 'Web',
+    badge: 'React',
+    description: 'Personal Note App for final assessment of learning React on Dicoding.',
+    tags: ['HTML5', 'CSS3', 'JavaScript', 'ReactJS'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14v18H5z"/><path d="M8 7h8M8 11h8M8 15h5"/><path d="M8 3v-1"/></svg>`,
+    github: 'https://github.com/azriels-tech/my-personal-notes',
+    featured: true,
+    date: '2026-06-22'
+  },
+  {
+    id: 'web-3',
+    title: 'Clock App',
+    category: 'Web',
+    badge: 'Static',
+    description: 'Clock App for implementing value change and time on Javascript.',
+    tags: ['HTML5', 'CSS3', 'JavaScript'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/><path d="M12 3V1M21 12h2"/></svg>`,
+    github: 'https://github.com/azriels-tech/WClock',
+    demo: 'https://azriels-tech.github.io/WClock',
+    featured: true,
+    date: '2026-06-23'
+  },
+  {
+    id: 'web-6',
+    title: 'Random Quote Generator',
+    category: 'Web',
+    badge: 'Static',
+    description: 'Random Quote Generator for implementing randomize data and learning array.',
+    tags: ['HTML5', 'CSS3', 'JavaScript'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9a3 3 0 0 1 3-3h1"/><path d="M8 9v2a3 3 0 0 0 3 3h1"/><path d="M16 9a3 3 0 0 0-3-3h-1"/><path d="M16 9v2a3 3 0 0 1-3 3h-1"/><path d="M6 18h12"/></svg>`,
+    github: 'https://github.com/azriels-tech/WRandQuote',
+    demo: 'https://azriels-tech.github.io/WRandQuote',
+    featured: true,
+    date: '2026-06-23'
+  },
+  {
+    id: 'web-7',
+    title: 'ToDo List App',
+    category: 'Web',
+    badge: 'Static',
+    description: 'ToDoList App for implementing DOM Manipulation.',
+    tags: ['HTML5', 'CSS3', 'JavaScript'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="m8 12 2 2 4-4M8 8h8M8 16h3"/></svg>`,
+    github: 'https://github.com/azriels-tech/WTodoList',
+    demo: 'https://azriels-tech.github.io/WTodoList',
+    featured: true,
+    date: '2026-06-25'
+  },
+  {
+    id: 'web-8',
+    title: 'Guess The Number',
+    category: 'Web',
+    badge: 'Static',
+    description: 'Guess The Number game for implementing Shuffle Array and User Input.',
+    tags: ['HTML5', 'CSS3', 'JavaScript'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/><circle cx="17" cy="7" r="1"/><circle cx="7" cy="17" r="1"/></svg>`,
+    github: 'https://github.com/azriels-tech/WGuessTheNumber',
+    demo: 'https://azriels-tech.github.io/WGuessTheNumber',
+    featured: true,
+    date: '2026-06-28'
+  },
+  {
+    id: 'web-12',
+    title: 'Dice Roller',
+    category: 'Web',
+    badge: 'Static',
+    description: 'Dice Roller App for implementing element value manipulation.',
+    tags: ['HTML5', 'CSS3', 'JavaScript'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/><circle cx="17" cy="7" r="1"/><circle cx="7" cy="17" r="1"/></svg>`,
+    github: 'https://github.com/azriels-tech/WDiceRoll',
+    demo: 'https://azriels-tech.github.io/WDiceRoll',
+    featured: true,
+    date: '2026-06-29'
+  },
+  {
+    id: 'web-9',
+    title: 'Rock Paper Scissor',
+    category: 'Web',
+    badge: 'Static',
+    description: 'Rock Paper Scissor game for implementing value change and switch case on Javascript.',
+    tags: ['HTML5', 'CSS3', 'JavaScript'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V5a2 2 0 0 1 4 0v5"/><path d="M13 10V4a2 2 0 0 1 4 0v8l2-1a2 2 0 0 1 2 3l-4 6H9a4 4 0 0 1-4-4v-5a2 2 0 0 1 4 0v2"/><path d="M9 11V8a2 2 0 0 0-4 0v3"/></svg>`,
+    github: 'https://github.com/azriels-tech/WRockPaperScissor',
+    demo: 'https://azriels-tech.github.io/WRockPaperScissor',
+    featured: true,
+    date: '2026-07-01'
+  },
+  {
+    id: 'web-10',
+    title: 'Temperature Conversion App',
+    category: 'Web',
+    badge: 'Static',
+    description: 'Temperature Conversion App for implementing Loop on Javascript.',
+    tags: ['HTML5', 'CSS3', 'JavaScript'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.76V5a2 2 0 0 0-4 0v9.76a5 5 0 1 0 4 0Z"/><path d="M12 8v8"/><path d="M15 8h2M15 12h2"/></svg>`,
+    github: 'https://github.com/azriels-tech/WTempConversion',
+    demo: 'https://azriels-tech.github.io/WTempConversion',
+    featured: true,
+    date: '2026-07-04'
+  },
+  {
+    id: 'web-11',
+    title: 'Library App',
+    category: 'Web',
+    badge: 'Static',
+    description: 'Library App for implementing Array Manipulation on Javascript.',
+    tags: ['HTML5', 'CSS3', 'JavaScript'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h3v18H6a2 2 0 0 1-2-2zM9 3h3v18H9zM12 5h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4z"/><path d="M6 7h3M14 9h4"/></svg>`,
+    github: 'https://github.com/azriels-tech/WLibrary',
+    demo: 'https://azriels-tech.github.io/WLibrary',
+    featured: true,
+    date: '2026-07-19'
+  },
+  {
+    id: 'python-1',
+    title: 'Calculator',
+    category: 'Python',
+    badge: 'Python',
+    description: 'CLI based calculator with Python.',
+    tags: ['Python'],
+    icon: `<svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 9H19M15 18V15M9 18H9.01M12 18H12.01M12 15H12.01M9 15H9.01M15 12H15.01M12 12H12.01M9 12H9.01M8.2 21H15.8C16.9201 21 17.4802 21 17.908 20.782C18.2843 20.5903 18.5903 20.2843 18.782 19.908C19 19.4802 19 18.9201 19 17.8V6.2C19 5.0799 19 4.51984 18.782 4.09202C18.5903 3.71569 18.2843 3.40973 17.908 3.21799C17.4802 3 16.9201 3 15.8 3H8.2C7.0799 3 6.51984 3 6.09202 3.21799C5.71569 3.40973 5.40973 3.71569 5.21799 4.09202C5 4.51984 5 5.07989 5 6.2V17.8C5 18.9201 5 19.4802 5.21799 19.908C5.40973 20.2843 5.71569 20.5903 6.09202 20.782C6.51984 21 7.07989 21 8.2 21Z" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+           </svg>`,
+    github: 'https://github.com/azriels-tech/PyCalc',
+    featured: true,
+    date: '2026-06-16'
+  },
+  {
+    id: 'python-2',
+    title: 'Guess The Number',
+    category: 'Python',
+    badge: 'Python',
+    description: 'Guess The Number game with Python and CLI based.',
+    tags: ['Python'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/><circle cx="17" cy="7" r="1"/><circle cx="7" cy="17" r="1"/></svg>`,
+    github: 'https://github.com/azriels-tech/PyGuessTheNumber',
+    featured: true,
+    date: '2026-09-04'
+  },
+  {
+    id: 'python-3',
+    title: 'Camera Chat',
+    category: 'Python',
+    badge: 'Networking',
+    description: 'Just a Camera Chat via TCP on Python.',
+    tags: ['Python', 'Vidstream', 'Threading', 'Socket'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h3l2-2h6l2 2h3a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2z"/><circle cx="12" cy="13" r="4"/><path d="M18 10h.01"/></svg>`,
+    github: 'https://github.com/azriels-tech/PyCameraChat',
+    featured: true,
+    date: '2026-09-10'
+  },
+  {
+    id: 'python-4',
+    title: 'BandWidth Monitor',
+    category: 'Python',
+    badge: 'Networking',
+    description: 'Python script to show you how much internet do you used, send and receive.',
+    tags: ['Python', 'PSUtil'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-4 3 8 2-4h7"/><path d="M5 19h14M5 5h14"/><path d="m7 3-2 2 2 2M17 17l2 2-2 2"/></svg>`,
+    github: 'https://github.com/azriels-tech/PyBandwidthMonitor',
+    featured: true,
+    date: '2026-09-10'
+  },
+  {
+    id: 'python-5',
+    title: 'Port Scanner',
+    category: 'Python',
+    badge: 'Networking',
+    description: 'Simple Port Scanner on Python.',
+    tags: ['Python', 'Threading', 'Socket', 'Queue'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 14h.01M11 14h.01M15 14h.01M7 17h.01M11 17h.01M15 17h.01"/><path d="M7 6h.01"/></svg>`,
+    github: 'https://github.com/azriels-tech/PyCameraChat',
+    featured: true,
+    date: '2026-09-11'
+  },
+  {
+    id: 'android-1',
+    title: 'Grade Conversion',
+    category: 'Android',
+    badge: 'Kotlin',
+    description: 'Just an app to convert student mark to a grade.',
+    tags: ['Android', 'Kotlin'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3 2.7-5 6-5s6 2 6 5"/><rect x="14" y="12" width="7" height="8" rx="1"/><path d="M16 12v-1a2 2 0 0 1 4 0v1"/></svg>`,
+    github: 'https://github.com/azriels-tech/NilaiSiswa',
+    featured: true,
+    date: '2026-06-21'
+  },
+  {
+    id: 'android-2',
+    title: 'Calculator',
+    category: 'Android',
+    badge: 'Kotlin',
+    description: 'Calculator app with Kotlin for Android',
+    tags: ['Android', 'Kotlin'],
+    icon: `<svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 9H19M15 18V15M9 18H9.01M12 18H12.01M12 15H12.01M9 15H9.01M15 12H15.01M12 12H12.01M9 12H9.01M8.2 21H15.8C16.9201 21 17.4802 21 17.908 20.782C18.2843 20.5903 18.5903 20.2843 18.782 19.908C19 19.4802 19 18.9201 19 17.8V6.2C19 5.0799 19 4.51984 18.782 4.09202C18.5903 3.71569 18.2843 3.40973 17.908 3.21799C17.4802 3 16.9201 3 15.8 3H8.2C7.0799 3 6.51984 3 6.09202 3.21799C5.71569 3.40973 5.40973 3.71569 5.21799 4.09202C5 4.51984 5 5.07989 5 6.2V17.8C5 18.9201 5 19.4802 5.21799 19.908C5.40973 20.2843 5.71569 20.5903 6.09202 20.782C6.51984 21 7.07989 21 8.2 21Z" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+           </svg>`,
+    github: 'https://github.com/azriels-tech/AndroidCalc',
+    featured: true,
+    date: '2026-06-22'
+  },
+  {
+    id: 'android-3',
+    title: 'ToDo List App',
+    category: 'Android',
+    badge: 'Kotlin',
+    description: 'A ToDo List App project for Android device.',
+    tags: ['Android', 'Kotlin'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="m8 12 2 2 4-4M8 8h8M8 16h3"/></svg>`,
+    github: 'https://github.com/azriels-tech/AndroidToDo',
+    featured: true,
+    date: '2026-06-27'
+  },
+  {
+    id: 'android-4',
+    title: 'ToDo List App',
+    category: 'Android',
+    badge: 'Flutter',
+    description: 'A ToDo List App project but using Flutter framework insted Kotlin',
+    tags: ['Android', 'Flutter'],
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="m8 12 2 2 4-4M8 8h8M8 16h3"/></svg>`,
+    github: 'https://github.com/azriels-tech/FtToDoApp',
+    featured: true,
+    date: '2026-06-22'
+  }
+];
+
+// Deklarasi global tambahan untuk menjamin kompatibilitas
+var projectsData = window.projectsData;

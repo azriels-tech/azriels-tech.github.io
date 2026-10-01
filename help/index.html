@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help Center & Resources | Azriels-tech</title>
+  <link rel="ICON" href="../assets/img/pfp.jpg" type="image/x-icon">
+  <meta name="description" content="Azriels-Tech Help Center and Documentation Resources">
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body class="help-page">
+
+  <!-- Main Help Section -->
+  <main class="projects-section help-section" id="help" style="margin-top: 6rem;">
+    <div class="section-header">
+      <span class="section-tag">Need Some Help?</span>
+      <h2 class="section-title">You can get help <span>Here!</span></h2>
+    </div>
+
+    <!-- Container Grid Kartu Help (Dirender via JavaScript dari assets/js/help.js) -->
+    <div class="help-cards-grid" id="help-cards-container">
+      <!-- JS will render help cards here -->
+    </div>
+  </main>
+
+  <!-- Modal Overlay Detail Rincian (Diklik Card) -->
+  <div class="help-modal-overlay" id="help-modal">
+    <div class="help-modal-container">
+      <!-- Left Column: Gambar Sampul -->
+      <div class="help-modal-left" id="help-modal-left">
+        <!-- JS will populate image here -->
+      </div>
+
+      <!-- Right Column: Informasi & Deskripsi Rinci + Tombol Aksi -->
+      <div class="help-modal-right" id="help-modal-right">
+        <!-- JS will populate detail info & button here -->
+      </div>
+    </div>
+  </div>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2026 <strong>azriels-tech</strong>. All rights reserved.</p>
+  </footer>
+
+  <a href="../" class="floating-action-btn" aria-label="Help Page" title="Need Help?">
+    <span class="fab-ring"></span>
+    <div class="fab-icon">
+      <svg fill="white" width="22px" height="22px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M222.927 580.115l301.354 328.512c24.354 28.708 20.825 71.724-7.883 96.078s-71.724 20.825-96.078-7.883L19.576 559.963a67.846 67.846 0 01-13.784-20.022 68.03 68.03 0 01-5.977-29.488l.001-.063a68.343 68.343 0 017.265-29.134 68.28 68.28 0 011.384-2.6 67.59 67.59 0 0110.102-13.687L429.966 21.113c25.592-27.611 68.721-29.247 96.331-3.656s29.247 68.721 3.656 96.331L224.088 443.784h730.46c37.647 0 68.166 30.519 68.166 68.166s-30.519 68.166-68.166 68.166H222.927z"/></svg>
+    </div>
+  </a>
+
+  <!-- Script Data Help & Script Logika Rendering -->
+  <script src="../assets/js/help.js"></script>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
