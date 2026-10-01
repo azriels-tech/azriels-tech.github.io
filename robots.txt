@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://azriels-tech.vercel.app/sitemap.xml
+
